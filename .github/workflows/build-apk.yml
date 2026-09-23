@@ -22,11 +22,11 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install Android build tools
-        run: sdkmanager "platforms;android-33" "build-tools;33.0.2"
+      - name: Prepare Android SDK
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses >/dev/null 2>&1 || true
+          sdkmanager "platforms;android-33" "build-tools;33.0.2"
 
       - name: Make Gradle wrapper executable
         run: chmod +x gradlew
