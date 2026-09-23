@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="">
 
-    <WebView
+    <com.myexample.webtoapk.NoPullToRefreshWebView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/webView"

@@ -22,7 +22,7 @@ android {
 
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.myexample.webtoapk"
+        applicationId "com.zapier.automation"
         minSdkVersion 24
         targetSdkVersion 33
         versionCode 1

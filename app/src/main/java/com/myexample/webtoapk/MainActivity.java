@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
     private GeolocationPermissions.Callback geoCallback;
     private String geoOrigin;
 
-    String mainURL = "https://github.com/Jipok";
+    String mainURL = "https://zapier.com";
     boolean requireDoubleBackToExit = true;
     boolean allowSubdomains = true;
 
@@ -237,6 +237,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         webview.setOverScrollMode(WebView.OVER_SCROLL_NEVER);
+        webview.setNestedScrollingEnabled(false);
 
         CookieManager cookieManager = CookieManager.getInstance();
         CookieManager.getInstance().setAcceptThirdPartyCookies(webview, true);
